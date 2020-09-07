@@ -1,0 +1,14 @@
+{
+    "BusinessControllerConfig": {
+        "BusinessControllerClass": "AccountsManager/BusinessControllers/BusinessController",
+        "CommandHandler": []
+    },
+    "Forms": {},
+    "ModuleName": "AccountsManager",
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "AccountsManager/PresentationControllers/PresentationController",
+            "PresentationExtensions": []
+        }
+    }
+}

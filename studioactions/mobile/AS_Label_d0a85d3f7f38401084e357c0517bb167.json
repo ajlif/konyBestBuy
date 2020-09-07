@@ -1,0 +1,34 @@
+{
+    "AS_Label_d0a85d3f7f38401084e357c0517bb167": {
+        "id": "AS_Label_d0a85d3f7f38401084e357c0517bb167",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "a217eac975e94bb9ad6a78abd17e3083",
+            "name": "frmReviews"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___a5788028c5b74124819a3779002306d3",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onBackNavigation",
+            "display": "onBackNavigation",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

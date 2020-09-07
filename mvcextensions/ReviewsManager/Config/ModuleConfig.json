@@ -1,0 +1,14 @@
+{
+    "BusinessControllerConfig": {
+        "BusinessControllerClass": "ReviewsManager/BusinessControllers/BusinessController",
+        "CommandHandler": []
+    },
+    "Forms": {},
+    "ModuleName": "ReviewsManager",
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "ReviewsManager/PresentationControllers/PresentationController",
+            "PresentationExtensions": []
+        }
+    }
+}

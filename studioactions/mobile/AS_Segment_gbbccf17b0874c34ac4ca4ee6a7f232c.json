@@ -1,0 +1,30 @@
+{
+    "AS_Segment_gbbccf17b0874c34ac4ca4ee6a7f232c": {
+        "id": "AS_Segment_gbbccf17b0874c34ac4ca4ee6a7f232c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCategory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c2d9e3ad65304412a2a2ba420297e209"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ie083ce4cf0d48bba0823ba2e95bbe3b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(\"otouch end\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,1 @@
+var i18nObject = {"key1":"This is an i18n model","key2":"Change the language to English","key3":"Change the language to French","key4":"Change the language to Spanish","key5":"Change the language to Arabic","key6":"List the languages ​​that are configured in this application","key7":"Back"}

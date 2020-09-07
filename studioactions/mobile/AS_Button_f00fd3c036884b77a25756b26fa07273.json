@@ -1,0 +1,75 @@
+{
+    "AS_Button_f00fd3c036884b77a25756b26fa07273": {
+        "id": "AS_Button_f00fd3c036884b77a25756b26fa07273",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "c2d9e3ad65304412a2a2ba420297e209",
+            "name": "frmCategory"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SET_FORM_WIDGET_PROPERTY_Untitled___j72f82d0513c42248c4db2490b5bd8bc",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "frmCategory",
+            "widgetId": "searchText",
+            "propertyName": "isVisible",
+            "propertyValue": "true",
+            "itemKUID": "c2d9e3ad65304412a2a2ba420297e209",
+            "widgetKUID": "d6399b7798a24f32a76c090c6c84285d",
+            "isSkinProperty": false,
+            "wType": "TextField",
+            "forkedPlatform": "all",
+            "parentId": null,
+            "callbackType": null,
+            "disabled": false,
+            "widgetPath": "this.view.searchText"
+        }, {
+            "id": "INVOKE_FUNCTION___e231b5f4485148fb9b2eae5ef0f81930",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "clickSearch",
+            "display": "clickSearch",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true,
+            "source": "controller"
+        }, {
+            "id": "MOVE_ACTION____f9747be4a02c40a0a8e74d2337607410",
+            "type": "MOVE_ACTION",
+            "itemType": "FORM",
+            "itemId": "frmCategory",
+            "widgetId": "headerButtonSearch",
+            "itemKUID": "c2d9e3ad65304412a2a2ba420297e209",
+            "widgetKUID": "f4c568fb9d4945a09899830b71b49d1e",
+            "wType": "Button",
+            "animationObject": {
+                "top": "1px",
+                "anchorPoint": {},
+                "stepConfig": {
+                    "timingFunction": "kony.anim.EASE"
+                }
+            },
+            "config": {
+                "delay": "0",
+                "iterationCount": 1,
+                "fillMode": "kony.anim.FILL_MODE_FORWARDS",
+                "duration": "500"
+            },
+            "start": "Immediately",
+            "animationId": "MOVE_ACTION____f9747be4a02c40a0a8e74d2337607410",
+            "displayAnimationId": "MOVE_ACTION____f9747be4a02c40a0a8e74d2337607410",
+            "forkedPlatform": "all",
+            "parentId": null,
+            "callbackType": null,
+            "disabled": false,
+            "widgetPath": "this.view.headerButtonSearch"
+        }]
+    }
+}

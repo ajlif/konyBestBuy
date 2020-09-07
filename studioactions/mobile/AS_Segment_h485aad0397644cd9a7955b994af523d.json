@@ -1,0 +1,34 @@
+{
+    "AS_Segment_h485aad0397644cd9a7955b994af523d": {
+        "id": "AS_Segment_h485aad0397644cd9a7955b994af523d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCategory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c2d9e3ad65304412a2a2ba420297e209"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___a6290177711b4de58c8cfb0be1770cbf",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onTouchMoveSegment",
+            "display": "onTouchMoveSegment",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "BusinessControllerConfig": {
+        "BusinessControllerClass": "SearchProductsManager/BusinessControllers/BusinessController",
+        "CommandHandler": []
+    },
+    "Forms": {},
+    "ModuleName": "SearchProductsManager",
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "SearchProductsManager/PresentationControllers/PresentationController",
+            "PresentationExtensions": []
+        }
+    }
+}

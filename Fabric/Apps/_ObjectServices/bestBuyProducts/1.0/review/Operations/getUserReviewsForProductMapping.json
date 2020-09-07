@@ -1,0 +1,31 @@
+{
+  "operationConfig" : {
+    "name" : "getUserReviewsForProduct8335",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "public",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"sku\" outputpath=\"sku\"/></map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"reviews\" outputpath=\"review\">\n            <set-param inputpath=\"sku\" outputpath=\"sku\"/>\n            <set-param inputpath=\"id\" outputpath=\"id\"/>\n            <set-param inputpath=\"reviewer_name\" outputpath=\"reviewer_name\"/>\n            <set-param inputpath=\"title\" outputpath=\"title\"/>\n            <set-param inputpath=\"comment\" outputpath=\"comment\"/>\n            <set-param inputpath=\"rating\" outputpath=\"rating\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"review\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"BestBuyAPP (1.0).getUserReviewsForProduct\",\"xy\":\"232 92\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:reviews:sku:\",\"to\":\"target:review:sku:\",\"fromPort\":\"source:reviews:sku:\",\"toPort\":\"target:review:sku:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:reviews:id:\",\"to\":\"target:review:id:\",\"fromPort\":\"source:reviews:id:\",\"toPort\":\"target:review:id:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:reviews:comment:\",\"to\":\"target:review:comment:\",\"fromPort\":\"source:reviews:comment:\",\"toPort\":\"target:review:comment:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:reviews:reviewer_name:\",\"to\":\"target:review:reviewer_name:\",\"fromPort\":\"source:reviews:reviewer_name:\",\"toPort\":\"target:review:reviewer_name:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:reviews:rating:\",\"to\":\"target:review:rating:\",\"fromPort\":\"source:reviews:rating:\",\"toPort\":\"target:review:rating:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:reviews:title:\",\"to\":\"target:review:title:\",\"fromPort\":\"source:reviews:title:\",\"toPort\":\"target:review:title:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "BestBuyAPP",
+      "serviceVersion" : "1.0",
+      "operationName" : "getUserReviewsForProduct"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "review",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "AS_Segment_j068730b86ee49bda439d9e16b127d2a": {
+        "id": "AS_Segment_j068730b86ee49bda439d9e16b127d2a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "language": "js",
+        "actions": []
+    }
+}

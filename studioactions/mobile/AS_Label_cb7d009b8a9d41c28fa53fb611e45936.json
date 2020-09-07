@@ -1,0 +1,34 @@
+{
+    "AS_Label_cb7d009b8a9d41c28fa53fb611e45936": {
+        "id": "AS_Label_cb7d009b8a9d41c28fa53fb611e45936",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmSearchProducts",
+            "type": "forms",
+            "platform": "",
+            "KUID": "efb3b5f380b243ada9c125ba4273b0b9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___ffe9d1e9ce20403bad7c57414410463e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onBackNavigation",
+            "display": "onBackNavigation",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

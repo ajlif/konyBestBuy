@@ -1,0 +1,31 @@
+{
+    "BusinessControllerConfig": {
+        "BusinessControllerClass": "AccountsModule/BusinessControllers/BusinessController",
+        "CommandHandler": []
+    },
+    "Forms": {
+        "mobile": {
+            "frmDummy": {
+                "Controller": "AccountsModule/frmDummyController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsModule/frmDummy",
+                "friendlyName": "frmDummy"
+            },
+            "frmHome": {
+                "Controller": "AccountsModule/frmHomeController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsModule/frmHome",
+                "friendlyName": "frmHome"
+            }
+        }
+    },
+    "ModuleName": "AccountsModule",
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "AccountsModule/PresentationControllers/PresentationController",
+            "PresentationExtensions": []
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "AS_Button_fe87e09ffce84275935aa6c1056a4c62": {
+        "id": "AS_Button_fe87e09ffce84275935aa6c1056a4c62",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "a217eac975e94bb9ad6a78abd17e3083",
+            "name": "frmReviews"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___f409ac282a5f4b638bba20dcd6230a55",
+            "type": "INVOKE_FUNCTION",
+            "display": "<>",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

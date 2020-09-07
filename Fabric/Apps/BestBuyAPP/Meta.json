@@ -1,0 +1,19 @@
+{
+  "subType" : "customapp",
+  "description" : "BestBuyAPP",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "BestBuyAPP",
+    "version" : "1.0",
+    "etag" : "434e9b24-8348-4961-98fd-d94fdb543980"
+  }, {
+    "name" : "BestBuyMock",
+    "version" : "1.0",
+    "etag" : "8ffccfd7-ea4a-4256-a042-ccf9dfbc9041"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "bestBuyProducts",
+    "version" : "1.0",
+    "etag" : "43096e7a-6798-40fb-8544-8a5ef9d73c32"
+  } ]
+}

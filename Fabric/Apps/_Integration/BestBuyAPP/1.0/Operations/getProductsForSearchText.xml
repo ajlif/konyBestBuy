@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" description="" endpoint="default" groupType="" id="getProductsForSearchText" passwordencrypted="false" security="authorized_app_user" type="plainxmlserviceConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value="function changeHttpStatusCode() {&#10; //var result is a fabric's default variable already instantiated&#10;   var resultToModify = resultToJSON();&#10; &#10;   var res = resultToModify[&quot;products&quot;];&#10; &#10;   var n_prod = Object.keys(res).length;&#10; &#10;   var resultKeys = Object.keys(res) ;&#10; &#10; &#10;   for (var i = 0; i &lt; n_prod; i++) {&#10;    var n_vars = Object.keys(res[i]).length;&#10;       var prodKeys = Object.keys(res[i]);&#10;       var name = res[i].name;&#10;       var name_modified = name.replace(/[^a-zA-Z0-9 ]/g, '');&#10;       res[i].name = name_modified;&#10;     &#10;     if (res[i].image === &quot;&quot;){&#10;       res[i].image = &quot;null&quot;;&#10;     }&#10;     if (res[i].salePrice === &quot;&quot;){&#10;       res[i].salePrice = 0;&#10;     }&#10;     if (res[i].customerReviewAverage === &quot;&quot;){&#10;       res[i].customerReviewAverage = &quot;0&quot;;&#10;     }&#10;     if (res[i].regularPrice === &quot;&quot;){&#10;       res[i].regularPrice = 0;&#10;     }&#10;     if (res[i].name === &quot;&quot;){&#10;       res[i].name = &quot;null&quot;;&#10;     }&#10;     if (res[i].onSale === &quot;&quot;){&#10;       res[i].onSale = false;&#10;     }&#10;     if (res[i].sku === &quot;&quot;){&#10;       res[i].sku = 0;&#10;     }&#10;     if (res[i].thumbnailImage === &quot;&quot;){&#10;       res[i].thumbnailImage = &quot;null&quot;;&#10;     }&#10;     &#10;     &#10;      /*for (x = 0; x &lt; prodKeys.length; x++){&#10;        if(res[i][prodKeys[x]] === &quot;&quot;){&#10;             res[i][prodKeys[x]] = &quot;null&quot;;&#10;           }&#10;       }*/&#10;&#10;   }&#10;   return resultToModify;&#10;}&#10;changeHttpStatusCode();"/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://api.bestbuy.com/v1/products(search=$search)?apiKey=rvqspss35warhhjxb3d5k6ma&amp;page=$page"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="GET"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+    </service-config>
+    <service-input passthrough="false">
+        <header datatype="" name="" passthrough="false"/>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="search" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="hdmi" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="page" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="1" value="">
+            <accessType></accessType>
+        </param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false">
+        <dataset defaultvalue="" id="products" order="" paramOrder="1" parentOrder="0" src="/products" testvalue="">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="sku" order="" paramOrder="2" parentOrder="1" passnull="false" sms-name="" src="product/sku" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="name" order="" paramOrder="3" parentOrder="1" passnull="false" sms-name="" src="product/name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="onSale" order="" paramOrder="4" parentOrder="1" passnull="false" sms-name="" src="product/onSale" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="regularPrice" order="" paramOrder="5" parentOrder="1" passnull="false" sms-name="" src="product/regularPrice" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="salePrice" order="" paramOrder="6" parentOrder="1" passnull="false" sms-name="" src="product/salePrice" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="customerReviewAverage" order="" paramOrder="7" parentOrder="1" passnull="false" sms-name="" src="product/customerReviewAverage" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="image" order="" paramOrder="8" parentOrder="1" passnull="false" sms-name="" src="product/image" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="thumbnailImage" order="" paramOrder="9" parentOrder="1" passnull="false" sms-name="" src="product/thumbnailImage" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+        </dataset>
+    </service-output>
+</service>

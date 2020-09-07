@@ -1,0 +1,1 @@
+var i18nObject = {"key1":"Ceci est un modèle i18n","key2":"Changer la langue en anglais","key3":"Changer la langue en français","key4":"Changer la langue en espagnol","key5":"Changer la langue en arabe","key6":"Répertorie les langues configurées dans cette application","key7":"en arrière"}

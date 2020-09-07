@@ -1,0 +1,32 @@
+{
+  "operationConfig" : {
+    "name" : "getProductsForSearchText2372",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "public",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\"/>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"products\" outputpath=\"product\">\n            <set-param inputpath=\"sku\" outputpath=\"sku\"/>\n            <set-param inputpath=\"name\" outputpath=\"name\"/>\n            <set-param inputpath=\"onSale\" outputpath=\"onSale\"/>\n            <set-param inputpath=\"regularPrice\" outputpath=\"regularPrice\"/>\n            <set-param inputpath=\"salePrice\" outputpath=\"salePrice\"/>\n            <set-param inputpath=\"image\" outputpath=\"image\"/>\n            <set-param inputpath=\"thumbnailImage\" outputpath=\"thumbnailImage\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"product\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"BestBuyAPP (1.0).getProductsForSearchText\",\"xy\":\"770 100\"}],\"linkDataArray\":[],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"product\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"BestBuyAPP (1.0).getProductsForSearchText\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:products:image:\",\"to\":\"target:product:image:\",\"fromPort\":\"source:products:image:\",\"toPort\":\"target:product:image:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:products:name:\",\"to\":\"target:product:name:\",\"fromPort\":\"source:products:name:\",\"toPort\":\"target:product:name:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:products:onSale:\",\"to\":\"target:product:onSale:\",\"fromPort\":\"source:products:onSale:\",\"toPort\":\"target:product:onSale:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:products:regularPrice:\",\"to\":\"target:product:regularPrice:\",\"fromPort\":\"source:products:regularPrice:\",\"toPort\":\"target:product:regularPrice:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:products:salePrice:\",\"to\":\"target:product:salePrice:\",\"fromPort\":\"source:products:salePrice:\",\"toPort\":\"target:product:salePrice:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:products:sku:\",\"to\":\"target:product:sku:\",\"fromPort\":\"source:products:sku:\",\"toPort\":\"target:product:sku:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:products:thumbnailImage:\",\"to\":\"target:product:thumbnailImage:\",\"fromPort\":\"source:products:thumbnailImage:\",\"toPort\":\"target:product:thumbnailImage:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "BestBuyAPP",
+      "serviceVersion" : "1.0",
+      "operationName" : "getProductsForSearchText"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "product",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}
